@@ -1,0 +1,296 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ABABAB;
+    --cor-terciaria: #FFFFFF;
+    --cor-quaternaria: #d6d6d6;
+    --cor-hover: #FF0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+
+}
+
+/* Corpo da Página*/
+body {
+    color: var(--cor-primaria);
+    width: 100%;
+}
+
+/*Menu de Navegação*/
+nav {
+    background-color: var(--cor-primaria);
+    
+  }
+  
+  /* Ul com a Classe Menu*/
+  .menu {
+    display: flex;
+    justify-content: first baseline; /* Distribui os itens uniformemente */
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .menu li a {
+    flex: 1; /* Os itens ocupam o espaço disponível igualmente */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--cor-terciaria);
+  
+  }
+  
+  .menu a {
+    display: block;
+    color: white;
+    padding: 10px 11px;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background-color: var(--cor-hover);
+  }
+
+  nav img {
+    align-items: center;
+    justify-content: center;
+    margin-left: 45%;
+  }
+
+  #Carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+ 
+#image {
+  width: 100%;
+  
+}
+
+.corta {
+  background-color: #000000;
+  height: 200px;
+}
+
+  /*Section dos Cards*/
+  .section_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Div dos Cards Com a Classe .card*/
+  .card {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px red;
+  }
+  
+  /* Imagens Dos Cards*/
+  .card-img {
+    width: 100%;
+    height: 350px;
+    
+  }
+  
+  /* Div Da Descrição dos Produtos e Preço*/
+  .card-content {
+    padding: 20px;
+  }
+  
+  /* H2 */
+  .card-content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:25px ;
+    text-align: center;
+  }
+  
+  .card-content h2:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:25px ;
+    text-align: center;
+    background-color: #FF0000;
+    cursor: pointer;
+  }
+  
+
+  .card-content p {
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  
+  /* Botão comprar em vermelho*/
+  .card-content a {
+    display: inline-block;
+    margin-left: 30%;
+    padding: 8px 16px;
+    background-color: var(--cor-primaria);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.8s ease;
+  }
+  
+  /*Efeito do botão*/
+  .card-content a:hover {
+    background-color: var(--cor-hover);
+    cursor: pointer;
+  }
+
+  /* Estilos para o footer */
+.footer {
+    padding: 20px;
+  }
+  
+  .social-icons {
+    margin-bottom: 18px;
+  }
+  
+  .icon {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Estilos para o footer e formulário de login */
+.footer {
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+
+
+/*Responsividade Mobile 0px a 600px */
+@media screen and (min-width:0px) and (max-width:600px) {
+  nav {
+    width: 100%;
+  }
+
+  nav img {
+    height: 50px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-start; /* Distribui os itens uniformemente */
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .menu li a {
+    font-size: 17px;
+    
+  }
+
+  .Carrossel {
+    width: 100%;
+    height: 40px;
+  }
+
+  #image {
+    width: 135%;
+    height: 180px;
+  }
+
+  .card {
+    width: 90%;
+   height: 550px;
+  }
+
+
+  .corta {
+    width: 100%;
+  }
+  .footer p {
+    width: 100%;
+   
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:1000px) {
+  nav {
+    width: 100%;
+  }
+
+  nav img {
+    height: 150px;
+  }
+
+  .menu li a {
+    font-size: 27px;
+    
+  }
+
+  .corta {
+    width: 100%;
+  }
+  .Carrossel {
+    width: 100%;
+    height: 120px;
+  }
+
+  #image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .card {
+    width: 40%;
+    margin-left: 30px;
+    
+  }
+
+  .login-form h2 {
+    margin-left: 70px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 100px;
+
+  }
+
+  .login-form {
+    background-color: var(--cor-hover);
+   width: 100%;
+  }
+
+  .login-form h2 {
+    width: 50%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .label {
+    width: 20%;
+  }
+
+  .entrar {
+    margin-left: 10px;
+    
+  }
+}
